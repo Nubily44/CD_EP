@@ -7,7 +7,7 @@ from sklearn.metrics import mean_squared_error, mean_absolute_error
 
 def main():
     print("--- Loading and Preprocessing Data ---")
-    animelist = pd.read_csv('./data/animelist.csv', 
+    animelist = pd.read_csv('./data/rating_complete.csv', 
                             usecols=['user_id', 'anime_id', 'rating'],
                             dtype={'user_id': 'int32', 'anime_id': 'int32', 'rating': 'int8'})
 
